@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LiveChat</title>
-    <link rel="preconnect" content="width-device-width, initial-scale=1.0"/>
-    <link href="http://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-    <!-- Join Screen-->
-     <div class="overlay" id="overlay">
-        <div class="join-box">
-            <div class="join-logo"></div>
-            <h1>LiveChat</h1>
-            <p>Real-Time, No Fluff,</p>
-            <div class="input-row"
-                <input
-                    type="text"
-                    id="usernameInput"
-                    placeholder="Enter your name..."
-                    maxlength="20"
-                    autocomplete="off"
-                />
-            <button id="joinBtn">Join Chat</button>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Join Screen -->
+    <div class="overlay" id="overlay">
+      <div class="join-box">
+        <div class="join-logo">⬡</div>
+        <h1>LiveChat</h1>
+        <p>Real-time. No fluff.</p>
+        <div class="input-row">
+          <input
+            type="text"
+            id="usernameInput"
+            placeholder="Enter your name..."
+            maxlength="20"
+            autocomplete="off"
+          />
+          <button id="joinBtn">Join →</button>
         </div>
-     </div>
-    <!-- Chat App-->
-    <div class="App" id="app">
-        <!-- sidebar-->
-         <!-- Sidebar -->
+      </div>
+    </div>
+
+    <!-- Chat App -->
+    <div class="app" id="app">
+      <!-- Sidebar -->
       <aside class="sidebar">
         <div class="sidebar-header">
           <span class="logo">⬡ LiveChat</span>
@@ -69,5 +73,5 @@
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
